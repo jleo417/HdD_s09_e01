@@ -4,7 +4,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: cont_py
+    container_name: contenedor_py3
     volumes:
         - .:/app
     working_dir: /app
