@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  mi-script:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: cont_py
+    volumes:
+        - .:/app
+    working_dir: /app
+    command: python s09_e01.py
